@@ -1,0 +1,35 @@
+
+
+nav {
+  display: flex;
+  background-color: #50;
+  flex-direction: column;
+  flex-basis: 15vw;
+  flex-shrink: 0;
+}
+
+
+
+nav a {
+  color: #afa;
+  padding: 0.25m 0.5m;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+
+nav a:hover {
+  background-color: #272;
+}
+
+header, main, section {
+  overflow: auto;
+}
+
+body{
+  margin: 0;
+}
+
+header, section{
+  background-color: #789;
+  padding: 0 0.5em;
+}
