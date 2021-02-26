@@ -1,16 +1,69 @@
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  transform: translatex(-100vw) ;
+  opacity: 0;
+  transition: 0.4s;
+}
 
+  /* more custom styles */
+
+
+
+
+body{
+  margin: 0;
+  background-color: #eb0;
+}
+
+#menuToggler, nav{
+  background-color: rgba(0,0,0,0,7);
+}
+
+#menuToggler{
+  color: white;
+  font-size: 3em;
+  text-align: right;
+  line-height: 1em;
+  padding: 0 1rem;
+}
+
+nav a {
+  font-size: 2em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: white;
+  text-align: center;
+}
+
+nav.open {
+  transform: none;
+  opacity: 1;
+  transform: translateX(0);
+  display: flex;
+}
 
 @media screen and (min-width: 500px) {
 
   #menuToggler {
     display: none;
-
   }
 
   nav {
     display: flex;
     flex-direction: row;
-
+    transform: none;
+    opacity: 1;
+    height: auto;
+    position: static;
   }
+  nav a {
+    font-size: 1.3em;
+  }
+
 
 }
